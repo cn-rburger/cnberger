@@ -1,0 +1,57 @@
+/* Sub Navigation Block */
+.sub-nav-container .sub-nav-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.sub-nav {
+  background-color: var(--rb-grey);
+  padding: 14px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sub-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0 24px;
+  gap: 24px;
+  max-width: var(--section-max-width);
+  margin-inline: auto;
+  white-space: nowrap;
+}
+
+.sub-nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.sub-nav ul li a {
+  color: var(--text-color);
+  font-size: var(--body-font-size-m);
+  font-weight: var(--body-font-weight-medium);
+  text-decoration: none;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.sub-nav ul li a:hover {
+  color: var(--rb-teal);
+  text-decoration: none;
+  border-bottom-color: var(--rb-teal);
+}
+
+.sub-nav ul li a.active,
+.sub-nav ul li a[aria-current="page"] {
+  font-weight: var(--body-font-weight-bold);
+  border-bottom-color: var(--text-color);
+}
+
+@media (width >= 900px) {
+  .sub-nav ul {
+    padding: 0 32px;
+    gap: 32px;
+  }
+}
